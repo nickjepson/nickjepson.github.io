@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
   <title>
     Nick Jepson
   </title>
-  
+  <style>
+    body {
+      background-color: #f4f4f8;
+      color: #002147;  /* Navy blue */
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    
+    h1 {
+      color: #002147;  /* Navy blue */
+      border-bottom: 2px solid #FFD700;  /* Gold */
+      padding-bottom: 10px;
+      margin-top: 30px;
+    }
+    
+    p {
+      margin: 15px 0;
+      font-size: 1.1em;
+    }
+    
+    img {
+      border: 8px solid #002147;  /* Navy blue border */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+    }
+    
+    iframe {
+      border: 2px solid #FFD700 !important;  /* Gold border */
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    /* Nautical accent elements */
+    h1::before {
+      content: "⚓";  /* Anchor symbol */
+      margin-right: 10px;
+      color: #FFD700;  /* Gold */
+    }
+    
+    /* Container styling */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0,33,71,0.1);  /* Subtle navy shadow */
+    }
+  </style>
 </head>
   
 <body>
-
+  <div class="container">
     <h1>Nick Jepson</h1>
 
   <img src="assignment6/IMG_1177.jpg" alt="My photo" width="400">
@@ -41,6 +92,6 @@
 
   <p>This is a paragraph.</p>
   <p>This is a paragraph.</p>
-
+  </div>
 </body>
 </html>
