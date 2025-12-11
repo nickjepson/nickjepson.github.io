@@ -14,8 +14,26 @@
       background-color: beige; 
       font-family: 'Poppins', sans-serif; 
     }
+
+    .region-list {
+      list-style: none; 
+      padding-left: 0;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-align: left;
+    }
   </style>
-  
 </head>
 
 <body>
@@ -24,93 +42,116 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="../index.html">Nicholas Jepson | JNL 221</a>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-<div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          <a class="nav-link active" href="../index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../final.html">Final</a>
+          <a class="nav-link active" href="../final.html">Final</a>
         </li>
       </ul>
     </div>
-
   </div>
 </nav>
 
-<div class="container">
+<div class="container py-4">
 
-  <!-- ROW 1 -->
-  <div class="row">
+  <!-- TITLE -->
+  <div class="row mb-4">
     <div class="col">
       <h2>DRUG OVERDOSES IN THE UNITED STATES - 2019-2025</h2>
     </div>
   </div>
 
   <!-- ROW 2 -->
-  <div class="row">
-    <div class="col-sm col-lg-8">
+  <div class="row mb-4">
+    <div class="col-lg-8">
       <h2>WHAT CAUSES A DRUG OVERDOSE?</h2>
     </div>
-    <div class="col-sm col-lg-4">
+    <div class="col-lg-4">
       <h2>WHAT REGIONS ARE MOST AFFECTED?</h2>
     </div>
   </div>
 
   <!-- ROW 3 -->
-  <div class="row">
-    <div class="col-sm col-lg-4">
+  <div class="row mb-4 align-items-center">
+    <div class="col-lg-4">
       <h2>DEATHS BY DRUG</h2>
     </div>
-    <div class="col-sm col-lg-4">
-      <p>Total sum of cocaine overdoses: 3,194,626
-      Total sum of ALL overdoses: 17,255,835</p>
+
+    <div class="col-lg-4">
+      <p>
+        <strong>Total sum of cocaine overdoses:</strong> 3,194,626<br>
+        <strong>Total sum of ALL overdoses:</strong> 17,255,835
+      </p>
     </div>
-    <div class="col-sm col-lg-4">
-      <h2><iframe title="DEATHS BY DRUG - 2019-2025" aria-label="Small multiple line chart" id="datawrapper-chart-8uSGT" src="https://datawrapper.dwcdn.net/8uSGT/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="287" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script></h2>
+
+    <div class="col-lg-4">
+      <iframe title="DEATHS BY DRUG - 2019-2025" aria-label="Small multiple line chart" id="datawrapper-chart-8uSGT" 
+        src="https://datawrapper.dwcdn.net/8uSGT/1/" scrolling="no" frameborder="0" 
+        style="width: 100%; border: none;" height="287">
+      </iframe>
+      <script>
+        window.addEventListener("message", function(a) {
+          if (a.data["datawrapper-height"]) {
+            var iframes = document.querySelectorAll("iframe");
+            for (var key in a.data["datawrapper-height"]) {
+              for (var i = 0; i < iframes.length; i++) {
+                if (iframes[i].contentWindow === a.source) {
+                  iframes[i].style.height = a.data["datawrapper-height"][key] + "px";
+                }
+              }
+            }
+          }
+        });
+      </script>
     </div>
   </div>
 
   <!-- ROW 4 -->
-  <div class="row">
-    <div class="col-sm col-lg-4">
+  <div class="row mb-4">
+    <div class="col-lg-4">
       <h2>BUT FENTANYL IS MORE DEADLY...</h2>
     </div>
-    <div class="col-sm col-lg-4">
+    <div class="col-lg-4">
       <p>Over 7.7 Million overdoses have been from Fentanyl.</p>
     </div>
-    <div class="col-sm col-lg-4">
+    <div class="col-lg-4">
       <h2>datawrapper</h2>
     </div>
   </div>
 
   <!-- ROW 5 -->
- <div class="row">
-  <div class="col-sm col-lg-9 left-col text-left">
-    <ul>
-      <li>Region 1: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont</li>
-      <li>Region 2: New Jersey and New York</li>
-      <li>Region 3: Delaware, District of Columbia, Maryland, Pennsylvania, Virginia, and West Virginia</li>    
-      <li>Region 4: Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee</li>
-      <li>Region 5: Illinois, Indiana, Michigan, Minnesota, Ohio, and Wisconsin</li>
-      <li>Region 6: Arkansas, Louisiana, New Mexico, Oklahoma, and Texas</li>  
-      <li>Region 7: Iowa, Kansas, Missouri, and Nebraska</li>
-      <li>Region 8: Colorado, Montana, North Dakota, South Dakota, Utah, and Wyoming</li>
-      <li>Region 9: Arizona, California, Hawaii, and Nevada</li>
-      <li>Region 10: Alaska, Idaho, Oregon, and Washington</li>
-    </ul>
-  </div>
+  <div class="row mb-5">
+    <div class="col-lg-9 text-start">
+      <h3 class="section-title">Regional Data</h3>
 
-  <div class="col-sm col-lg-3 text-center">
-    <p>TEXT AREA</p>
+      <ul class="region-list">
+        <li>Region 1: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont</li>
+        <li>Region 2: New Jersey and New York</li>
+        <li>Region 3: Delaware, District of Columbia, Maryland, Pennsylvania, Virginia, and West Virginia</li>    
+        <li>Region 4: Alabama, Florida, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee</li>
+        <li>Region 5: Illinois, Indiana, Michigan, Minnesota, Ohio, and Wisconsin</li>
+        <li>Region 6: Arkansas, Louisiana, New Mexico, Oklahoma, and Texas</li>  
+        <li>Region 7: Iowa, Kansas, Missouri, and Nebraska</li>
+        <li>Region 8: Colorado, Montana, North Dakota, South Dakota, Utah, and Wyoming</li>
+        <li>Region 9: Arizona, California, Hawaii, and Nevada</li>
+        <li>Region 10: Alaska, Idaho, Oregon, and Washington</li>
+      </ul>
+    </div>
+
+    <div class="col-lg-3 text-center">
+      <p><strong>TEXT AREA</strong></p>
+    </div>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  
+
 </body>
 </html>
